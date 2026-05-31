@@ -413,3 +413,21 @@ button:hover{
     box-sizing: border-box;
   }
 }
+
+.empty-cart{
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.empty-cart h1{
+  font-size: 2rem;
+}
+
+.empty-cart button{
+  padding: 10px 20px;
+  cursor: pointer;
+}

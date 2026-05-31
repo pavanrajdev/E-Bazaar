@@ -13,6 +13,15 @@ const UserCart = () => {
   decreaseQuantity
 } = useCart();
 
+ if (cartitems.length === 0) {
+    return (
+      <div className="empty-cart">
+        <h1>Your Cart is Empty 🛒</h1>
+        <p>Add some products to continue shopping.</p>
+      </div>
+    );
+  }
+
   return (
     <>
     <Navbar />
