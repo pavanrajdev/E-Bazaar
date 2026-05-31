@@ -9,6 +9,7 @@
 }
 body{
   font-family: 'Roboto', sans-serif;
+  padding-top:120px;
 }
 
 
@@ -18,13 +19,17 @@ body{
   background-color: rgb(52, 56, 71);
   padding:20px;
   color:white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 .search{
   width:300px;
   height:30px;
   font-size:18px;
   border-radius:6px;
-  margin-left:80px;
 }
 .subsection ul{
   display: flex;
@@ -49,6 +54,11 @@ a:hover{
 .subsection{
   padding:15px 20px;
   background-color: rgb(128, 128, 128);
+   position: fixed;
+  top: 72px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 .subsection li{
   color:white;
@@ -67,6 +77,8 @@ a:hover{
 .proimage{
   width:100%;
   border-radius:10px;
+  margin-top:0px;
+  margin-bottom:10px;
 }
 
 .prosection2{
@@ -75,7 +87,7 @@ a:hover{
   justify-content:center;
   gap:30px;
   width:100%;
-  margin-top:5px;
+  margin-top:12px;
 }
 
 .imagebox2{
@@ -84,6 +96,7 @@ a:hover{
   flex-direction:column;
   align-items:center;
   border-radius:15px;
+
 }
 
 .proimage2{
@@ -91,6 +104,8 @@ a:hover{
   height:230px;
   object-fit:contain;
   border-radius:15px;
+  margin-top:8px;
+  margin-bottom:8px;
 }
 
 .prodetails2{
@@ -182,8 +197,6 @@ label{
   justify-content:space-between;
   width:250px;
   margin-top:10px;
-  
- 
 }
 .bt button{
   transition: transform 0.3s ease;
@@ -228,14 +241,14 @@ label{
     top: 65px;
     left: 0;
     width: 80%;
-    background: white;
+      background: rgba(255, 255, 255, 0.7);
     border-radius: 20px;
     padding: 10px 0;
     box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
     z-index: 999;
     max-height: 500px;
     overflow-y: auto;
-    margin-left:80px;
+
 }
 
 /* EACH ITEM */
@@ -275,8 +288,19 @@ label{
 button:hover{
    transform: scale(1.1);
 }
+  .logo{
+    color:white;
+  white-space: nowrap;
+}
 @media (max-width: 850px) {
 
+  body{
+    padding-top:70px;
+  }
+  .btns{
+    display:flex;
+    justify-content:center;
+  }
   /* NAVBAR */
   .navsection {
     display: flex;
@@ -284,7 +308,12 @@ button:hover{
     justify-content: space-between;
     align-items: center;
     padding: 12px;
+     position: fixed;
   }
+  .logo{
+    color:white;
+  white-space: nowrap;
+}
 
   .navsection > div:first-child {
     flex: 1;
@@ -303,15 +332,20 @@ button:hover{
 
   /* SEARCH BAR */
   .search-container {
-    flex: 2;
     display: flex;
     justify-content: center;
     margin-left: 0;
+    margin-left:30px;
+    margin-right:30px;
+    max-width:350px;
   }
 
+  .search-results{
+  max-width:350px;
+  width:100%;
+}
   .search {
     width: 100%;
-    max-width: 160px;
     font-size: 14px;
     padding: 8px 10px;
   }
@@ -378,6 +412,17 @@ button:hover{
     flex-direction: column;
     align-items: center;
   }
+
+   .login{
+    display:flex;
+    flex-direction:column;
+    gap:0;
+  }
+}
+
+.login{
+  display: flex;
+  gap: 5px;
 }
 
 @media (max-width: 992px) {
@@ -430,4 +475,22 @@ button:hover{
 .empty-cart button{
   padding: 10px 20px;
   cursor: pointer;
+}
+
+.head{
+  color:black;
+  margin-top:50px;
+  margin-bottom: 0px;
+}
+
+@media (max-width:600px) {
+  .search{
+  margin-left:15px;
+  margin-right:15px;
+}
+ .cartsection{
+    width: calc(100% - 50px);
+    margin: 0 25px;
+  }
+
 }

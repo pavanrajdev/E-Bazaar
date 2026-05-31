@@ -5,7 +5,8 @@ const Acs = () => {
     const data=acData.slice(0,5);
   return (
     <>
-    <h1>Air Conditioners</h1>
+            <Link to={"/ac"}><h1 className='head'>Air-Conditioners</h1></Link>
+  
     <div className='prosection'>
        {data.map((item)=>{
          

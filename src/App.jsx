@@ -1,4 +1,4 @@
-
+import ScrollToTop from "./Components/ScrollToTop";
 import Navbar from './Components/Navbar'
 import './App.css'
 import LandingPage from './Pages/LandingPage'
@@ -46,6 +46,8 @@ function App() {
 
   return (
     <>
+     <ScrollToTop />
+
      <Routes>
         <Route path='/ac' element={<AcPage/>}/>
         <Route path='/book' element={<BooksPage/>}/>

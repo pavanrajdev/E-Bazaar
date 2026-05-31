@@ -9,7 +9,7 @@ const Computers = () => {
   
   return (
     <>
-    <h1>Computers</h1>
+    <Link to={"/computer"}><h1 className='head'>Computers</h1></Link>
     <div className='prosection'>
        {data.map((item)=>{
          

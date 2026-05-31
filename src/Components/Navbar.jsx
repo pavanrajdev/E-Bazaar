@@ -46,7 +46,7 @@ const Navbar = () => {
 
         <div>
           <Link to={"/"}>
-            <h2 style={{ color: "white" }}>E-Bazar</h2>
+            <h2 className='logo'>E-Bazar</h2>
           </Link>
         </div>
 
@@ -95,8 +95,11 @@ const Navbar = () => {
           )}
         </div>
 
-        <div>
-          <h3>SignUp/SignIn</h3>
+        <div ><div className='login'>
+           <h3 >SignUp</h3>
+          <h3>/SignIn</h3>
+        </div>
+         
         </div>
 
         {/* CART */}

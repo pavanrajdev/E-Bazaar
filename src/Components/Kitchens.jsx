@@ -8,7 +8,7 @@ const Kitchens= () => {
 
   return (
     <>
-    <h1>Kitchen</h1>
+            <Link to={"/kitchen"}><h1 className='head'>Kitchen</h1></Link>
     <div className='prosection'>
        {data.map((item)=>{
          

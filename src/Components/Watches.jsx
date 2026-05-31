@@ -8,7 +8,7 @@ const Watches= () => {
 
   return (
     <>
-    <h1>Watches</h1>
+            <Link to={"/watch"}><h1 className='head'>Watches</h1></Link>
     <div className='prosection'>
        {data.map((item)=>{
       return  <div className='imgbox' key={item.id}><Link to={`watch/${item.id}`}>

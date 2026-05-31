@@ -8,7 +8,7 @@ const Books= () => {
 
   return (
     <>
-    <h1>Books</h1>
+    <Link to={"/book"}><h1 className='head'>Books</h1></Link>
     <div className='prosection'>
        {data.map((item)=>{
       return  <div className='imgbox' key={item.id}>

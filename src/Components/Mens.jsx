@@ -8,7 +8,7 @@ const Mens= () => {
 
   return (
     <>
-    <h1>Mens-Wear</h1>
+            <Link to={"/men"}><h1 className='head'>Mens-wear</h1></Link>
     <div className='prosection'>
        {data.map((item)=>{
          

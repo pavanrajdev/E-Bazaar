@@ -8,7 +8,7 @@ const Furniture= () => {
 
   return (
     <>
-    <h1>Furnitures</h1>
+        <Link to={"/furniture"}><h1 className='head'>Furniture</h1></Link>
     <div className='prosection'>
        {data.map((item)=>{
          

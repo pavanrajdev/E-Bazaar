@@ -8,7 +8,7 @@ const Speakers= () => {
 
   return (
     <>
-    <h1>Speakers</h1>
+            <Link to={"/speaker"}><h1 className='head'>Speakers</h1></Link>
     <div className='prosection'>
        {data.map((item)=>{
          

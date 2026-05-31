@@ -9,8 +9,8 @@ const Mobiles = () => {
   
   return (
     <>
-    <h1>Mobiles</h1>
-    <div className='prosection'>
+            <Link to={"/mobile"} ><h1 className='head' style={{marginTop:"8px"}}>mobiles</h1></Link>
+    <div className='prosection' >
     { data.map((item)=>{
         return <div className='imgbox' key={item.id}>
           <Link to={`mobile/${item.id}`}>

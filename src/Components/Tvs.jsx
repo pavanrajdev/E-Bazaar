@@ -8,7 +8,7 @@ const Tvs= () => {
 
   return (
     <>
-    <h1>Speakers</h1>
+            <Link to={"/tv"}><h1 className='head'>TVS</h1></Link>
     <div className='prosection'>
        {data.map((item)=>{
          
