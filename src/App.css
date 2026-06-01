@@ -416,6 +416,7 @@ button:hover{
    .login{
     display:flex;
     flex-direction:column;
+    margin-right:20px;
     gap:0;
   }
 }
@@ -433,6 +434,9 @@ button:hover{
     overflow-x: hidden;
   }
 
+  .login{
+     margin-right:30px;
+  }
   .navsection {
     width: 100%;
     box-sizing: border-box;
@@ -490,7 +494,7 @@ button:hover{
 }
  .cartsection{
     width: calc(100% - 50px);
-    margin: 0 25px;
+    margin: 20px 25px;
   }
 
 }
