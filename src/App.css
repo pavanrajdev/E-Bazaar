@@ -510,4 +510,16 @@ button:hover{
   font-size: medium;
   margin-right:8px;
 }
+
+.login{
+    display:none;
+  }
+  .search-container{
+    margin-left:5px;
+    margin-right:5px;
+  }
+}
+
+@media (max-width:500px) {
+  
 }
