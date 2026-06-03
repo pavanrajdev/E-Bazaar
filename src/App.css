@@ -505,4 +505,9 @@ button:hover{
   .search-results{
     width:100%;
   }
+
+  .mic-btn{
+  font-size: medium;
+  margin-right:8px;
+}
 }
