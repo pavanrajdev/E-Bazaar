@@ -1,11 +1,45 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition'
 import { Link } from 'react-router-dom'
 import { allProducts } from '../Data/allProducts'
 import { useCart } from '../Context/CartProvider'
 
 const Navbar = () => {
   const [search, setSearch] = useState("")
+const {
+  transcript,
+  interimTranscript,
+  resetTranscript,
+  listening,
+  browserSupportsSpeechRecognition
+} = useSpeechRecognition()
+
+
+console.log("Supported:", browserSupportsSpeechRecognition);
+console.log("Listening:", listening);
+console.log("Transcript:", transcript);
+
+useEffect(() => {
+  setSearch((transcript || interimTranscript).replace(/[.,!?]$/g, ""));
+}, [transcript, interimTranscript]);
   const { cartitems } = useCart()
+
+const handleVoiceSearch = async () => {
+  console.log("Mic clicked");
+
+ resetTranscript();
+
+  try {
+    await SpeechRecognition.startListening({
+      continuous: false,
+      language: "en-IN"
+    });
+
+    console.log("Started listening");
+  } catch (err) {
+    console.error(err);
+  }
+};
 
   const filteredProducts = allProducts
     .map((item) => {
@@ -53,14 +87,25 @@ const Navbar = () => {
         {/* SEARCH */}
         <div className='search-container'>
 
-          <input
+<div className="search-box">
+  <input
             type="text"
             placeholder='Search...'
             className='search'
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
+           {browserSupportsSpeechRecognition && (
+    <button
+      onClick={handleVoiceSearch}
+         className="mic-btn"
+    >
+      🎤
+    </button>
+  )}
 
+</div>
+          
           {/* RESULTS */}
           {search && (
             <div className='search-results'>
