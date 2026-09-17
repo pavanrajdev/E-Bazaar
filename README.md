@@ -1,197 +1,141 @@
+E-Bazaar
 
-E-Bazaar is a frontend e-commerce web application built with React.js. The project focuses on creating a responsive and user-friendly shopping experience using reusable React components, React Context API, and client-side state management.
+E-Bazaar is a frontend e-commerce web application built with React.js. The project focuses on creating a responsive and user-friendly shopping experience using reusable React components, React Context API, React Router, and client-side state management.
 
-Features
+Features:
 
-Modern e-commerce user interface
-
-Product browsing and product-focused pages
-
-Reusable React components
-
-Shopping cart functionality
-
-Global state management using React Context API
-
-Client-side navigation between pages
-
-Organized page and component structure
-
-Responsive design for different screen sizes
-
-Static/local product data for displaying products
+* Product browsing
+* Product search
+* Category-based product filtering
+* Product details page
+* Add products to cart
+* Remove products from cart
+* Shopping cart management
+* Global state management using React Context API
+* Client-side navigation using React Router
+* Responsive design for different screen sizes
+* Static/local product data
+* Reusable React components
 
 Tech Stack
 
-React.js – Building the user interface
+* **Frontend:** React.js
+* **Language:** JavaScript
+* **Styling:** CSS3
+* **Routing:** React Router
+* **State Management:** React Context API
+* **Build Tool:** Vite
+* **Data:** Local/JSON product data
 
-JavaScript (ES6+) – Application logic
-
-HTML5 – Page structure
-
-CSS3 – Styling and responsive layouts
-
-React Context API – Global state management
-
-Vite – Development/build tooling
-
-Git & GitHub – Version control
-
-Project Structure
+📂 Project Structure
 
 E-Bazaar/
 │
 ├── public/
 │
 ├── src/
-│   ├── Components/
-│   │   └── UI components
+│   ├── components/
+│   ├── pages/
+│   ├── context/
+│   ├── data/
+│   ├── assets/
 │   │
-│   ├── Context/
-│   │   └── React Context and global state management
-│   │
-│   ├── Data/
-│   │   └── Product/static application data
-│   │
-│   ├── Pages/
-│   │   └── Main application pages
-│   │
-│   ├── Singles/
-│   │   └── Individual/single-item related components or pages
-│   │
-│   ├── App.css
 │   ├── App.jsx
-│   ├── UserCart.jsx
-│   ├── index.css
-│   └── main.jsx
+│   ├── main.jsx
+│   └── ...
 │
-├── .gitignore
 ├── package.json
+├── vite.config.js
 └── README.md
 
-Architecture
 
-The application follows a component-based React architecture.
+⚙️ Getting Started
 
-Components
+Follow these steps to run the project locally.
 
-The Components directory contains reusable UI elements. Keeping common UI elements separate makes the application easier to maintain and extend.
+1. Clone the Repository
 
-Context
+bash
+git clone https://github.com/pavanrajdev/E-Bazaar.git
 
-The Context directory is used for shared application state through the React Context API. This helps avoid unnecessary prop drilling when state needs to be accessed by multiple components.
 
-Data
+### 2. Navigate to the Project Directory
 
-The Data directory contains the product/application data used by the frontend.
-
-Pages
-
-The Pages directory contains the major views of the application. Pages combine reusable components to create complete screens.
-
-Singles
-
-The Singles directory contains components/pages related to individual items or specific views.
-
-UserCart
-
-UserCart.jsx handles the cart-related user interface and works with the application's shared state.
-
-Getting Started
-
-Prerequisites
-
-Make sure you have the following installed:
-
-Node.js
-
-npm
-
-Git
-
-Installation
-
-Clone the repository:
-
-Navigate to the project directory:
-
+```bash
 cd E-Bazaar
+```
 
-Install dependencies:
+### 3. Install Dependencies
 
+```bash
 npm install
+```
 
-Start the development server:
+### 4. Start the Development Server
 
+```bash
 npm run dev
+```
 
-Open the local URL shown in the terminal, typically:
+The application will start on the local development server provided by Vite.
 
-http://localhost:5173
+Application Workflow
 
-Available Scripts
+1. Browse available products.
+2. Search for products using the search functionality.
+3. Filter products based on categories.
+4. Open a product to view its details.
+5. Add products to the shopping cart.
+6. View the cart and manage selected products.
+7. Remove products from the cart when required.
 
-Depending on the Vite configuration, the main commands are:
+ Key Concepts Used
 
-npm run dev
+ React Components
 
-Starts the development server.
+The application is divided into reusable components to keep the UI organized and maintainable.
 
-npm run build
+ React Context API
 
-Creates a production build.
+React Context API is used for managing global shopping-cart state and sharing cart data across components without passing props through multiple levels.
 
-npm run preview
+React Router
 
-Previews the production build locally.
+React Router is used to provide client-side navigation between different pages of the application.
 
-State Management
+ Client-Side State Management
 
-E-Bazaar uses React Context API for managing shared state.
+React state and Context API are used to manage application and shopping-cart data on the client side.
 
-Instead of passing the same state through multiple levels of components using props, shared state can be provided through a Context Provider and accessed by components that need it.
+ Responsive Design
 
-This approach keeps the application structure cleaner as the number of components grows.
+The application is designed to provide a usable shopping experience across different screen sizes, including desktop, tablet, and mobile devices.
 
-Frontend-Only Implementation
+ 🔗 Links
 
-This version of E-Bazaar is a frontend project.
+* **GitHub Repository:** https://github.com/pavanrajdev/E-Bazaar
+* **Live Demo:** https://e-bazaar-mu.vercel.app/
 
-Product information and application data are handled on the client side. There is currently:
+## 🔮 Future Enhancements
 
-A backend can be integrated later to support persistent users, products, orders, payments, and authentication.
+* Spring Boot backend integration
+* User authentication and authorization
+* Database integration
+* User profile management
+* Order management
+* Payment integration
+* Backend product management
+* Persistent shopping cart
+* Admin dashboard
 
-Future Improvements
+## 📌 Project Status
 
-Potential improvements for future versions include:
+**Completed — September 2026**
 
-Build a REST API backend
+The current version focuses on the frontend e-commerce experience using React.js and client-side state management.
 
-Integrate Spring Boot
+## 👨‍💻 Author
 
-Add MySQL database support
+**Pavan Raj**
 
-Implement user registration and login
-
-Add JWT-based authentication
-
-Store cart and order information in a database
-
-Add product search and filtering
-
-Add product categories
-
-Add product reviews and ratings
-
-Add order history and order tracking
-
-Integrate a payment gateway
-
-Deploy the frontend and backend
-
-
-Author
-
-Pavan Raj
-
-Java Full Stack Developer | React.js Developer
+GitHub: https://github.com/pavanrajdev
