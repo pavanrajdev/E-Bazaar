@@ -1,8 +1,8 @@
-E-Bazaar
+# E-Bazaar
 
 E-Bazaar is a frontend e-commerce web application built with React.js. The project focuses on creating a responsive and user-friendly shopping experience using reusable React components, React Context API, React Router, and client-side state management.
 
-Features:
+## 🚀 Features
 
 * Product browsing
 * Product search
@@ -17,7 +17,7 @@ Features:
 * Static/local product data
 * Reusable React components
 
-Tech Stack
+## 🛠️ Tech Stack
 
 * **Frontend:** React.js
 * **Language:** JavaScript
@@ -27,7 +27,9 @@ Tech Stack
 * **Build Tool:** Vite
 * **Data:** Local/JSON product data
 
-📂 Project Structure
+## 📂 Project Structure
+
+```text
 E-Bazaar/
 │
 ├── public/
@@ -46,16 +48,17 @@ E-Bazaar/
 ├── package.json
 ├── vite.config.js
 └── README.md
+```
 
-⚙️ Getting Started
+## ⚙️ Getting Started
 
 Follow these steps to run the project locally.
 
-1. Clone the Repository
+### 1. Clone the Repository
 
-bash
+```bash
 git clone https://github.com/pavanrajdev/E-Bazaar.git
-
+```
 
 ### 2. Navigate to the Project Directory
 
@@ -77,7 +80,7 @@ npm run dev
 
 The application will start on the local development server provided by Vite.
 
-Application Workflow
+## 🖥️ Application Workflow
 
 1. Browse available products.
 2. Search for products using the search functionality.
@@ -87,25 +90,25 @@ Application Workflow
 6. View the cart and manage selected products.
 7. Remove products from the cart when required.
 
- Key Concepts Used
+## 🧠 Key Concepts Used
 
- React Components
+### React Components
 
 The application is divided into reusable components to keep the UI organized and maintainable.
 
- React Context API
+### React Context API
 
 React Context API is used for managing global shopping-cart state and sharing cart data across components without passing props through multiple levels.
 
-React Router
+### React Router
 
 React Router is used to provide client-side navigation between different pages of the application.
 
- Client-Side State Management
+### Client-Side State Management
 
 React state and Context API are used to manage application and shopping-cart data on the client side.
 
- Responsive Design
+Responsive Design
 
 The application is designed to provide a usable shopping experience across different screen sizes, including desktop, tablet, and mobile devices.
 
