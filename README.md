@@ -28,7 +28,6 @@ Tech Stack
 * **Data:** Local/JSON product data
 
 📂 Project Structure
-
 E-Bazaar/
 │
 ├── public/
@@ -47,7 +46,6 @@ E-Bazaar/
 ├── package.json
 ├── vite.config.js
 └── README.md
-
 
 ⚙️ Getting Started
 
